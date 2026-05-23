@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Art Loom | Handcrafted Heritage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="./style/category.css" />
+  </head>
+  <body>
+    <header class="header">
+        <div class="navbar all-nav">
+            <img src="image/artloom-logo.png.png" alt="Art Loom Logo" style="height: 50px; cursor: pointer;">
+
+            <div class="country_select" id="state">
+                <div class="select">
+                    <p id="text"><i class="fa-solid fa-magnifying-glass"></i> Select Your State</p>
+                    <i class="fa-solid fa-chevron-down" id="down"></i>
+                </div>
+
+                <ul class="option_box" id="list" style="display: none;">
+                    <li class="option" onclick="myFunction('Karnataka')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Karnataka</p>
+                    </li>
+                    <li class="option" onclick="myFunction('Maharashtra')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Maharashtra</p>
+                    </li>
+                    <li class="option" onclick="myFunction('Kerala')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Kerala</p>
+                    </li>
+                    <li class="option" onclick="myFunction('Tamil Nadu')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Tamil Nadu</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="search_box">
+                <input type="text" class="searchClass" id="searchId" placeholder="Find Channapatna Toys, Mehendi Art, Tailors...">
+                <p><i class="fa-solid fa-magnifying-glass"></i></p>
+            </div>
+
+            <div class="language">
+                <p id="eng">English<i class="fa-xl fa-solid fa-chevron-down" id="down"></i></p>
+                <ul class="hindi">
+                    <li onclick="lang('ಕನ್ನಡ')">ಕನ್ನಡ</li>
+                    <li onclick="lang('English')">English</li>
+                </ul>
+            </div>
+
+            <div class="your_logo">
+                <div class="girl_img" id="girl_img">
+                    <p id="login"><a href="./land.html"><b>Login</b></a> </p>
+                </div>
+            </div>
+            
+            <div class="selling">
+                <button><i class="fa-solid fa-plus"></i>
+                <p>SELL ART</p>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div id="premenu">
+        <div id="all_categories"><p> ALL CRAFTS <i id="down" class="fa-solid fa-chevron-down"></i></p></div>
+        <div>
+            <p id="car">Wooden Toys</p>
+            <p>Hand-woven Fabrics</p>
+            <p>Pottery</p>
+            <p>Organic Beauty</p>
+            <p>Custom Tailoring</p>
+            <p>Home Decor</p>
+        </div>
+    </div>
+
+    <div class="menu" id="menu">
+        <div class="properties">
+            <ul><h3><b>Traditional Crafts</b></h3>
+                <li><p>Channapatna Wooden Toys</

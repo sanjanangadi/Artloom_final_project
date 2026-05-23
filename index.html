@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Loom | Handcrafted Artisans</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="navbar">
+                <img src="image/logo.jpg" alt="ArtLoom" style="height: 50px;">
+            </div>
+
+            <div class="state_select" id="state-btn">
+                <div class="select_box">
+                    <p id="state-text"><i class="fa-solid fa-location-dot"></i> Select State</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <ul class="option_box" id="state-list" style="display: none;">
+                    <li onclick="selectState('Karnataka')">Karnataka</li>
+                    <li onclick="selectState('Maharashtra')">Maharashtra</li>
+                    <li onclick="selectState('Kerala')">Kerala</li>
+                </ul>
+            </div>
+
+            <div class="lang_select" id="lang-btn">
+                <p id="current-lang">English</p>
+                <i class="fa-solid fa-chevron-down"></i>
+                <ul class="lang_options" id="lang-list" style="display: none;">
+                    <li onclick="selectLang('English')">English</li>
+                    <li onclick="selectLang('ಕನ್ನಡ')">ಕನ್ನಡ</li>
+                </ul>
+            </div>
+
+            <div class="nav_buttons">
+                <a href="login1.html">Login</a>
+                <a href="sell.html" class="sell-btn">+ SELL ART</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-categories">
+        <h1>Art Loom Artisans | ಆರ್ಟ್ ಲೂಮ್ ಕುಶಲಕರ್ಮಿಗಳು</h1>
+        <div class="category-bar">
+            <div class="cat-card">
+                <i class="fa-solid fa-scissors"></i>
+                <p>Tailoring</p>
+            </div>
+            <div class="cat-card">
+                <i class="fa-solid fa-hand-sparkles"></i>
+                <p>Mehendi</p>
+            </div>
+            <div class="cat-card">
+                <i class="fa-solid fa-palette"></i>
+                <p>Artisans</p>
+            </div>
+        </div>
+    </section>
+
+    <main id="main-display">
+        </main>
+
+    <script src="script/index.js"></script>
+</body>
+</html>

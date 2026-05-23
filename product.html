@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Details | Art Loom</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./style/product.css" />
+  <link rel="stylesheet" href="./style/chat.css" />
+  <style>
+    button:hover {
+      background-color: #002f34;
+      color: white;
+      font-weight: bolder;
+    }
+    #innerbox img {
+      width: 40px;
+      align-self: flex-start;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="navbar all-nav">
+      <img src="image/logo.jpg" alt="Art Loom Logo" style="height: 45px; cursor: pointer;" />
+
+      <div class="country_select" id="state">
+        <div class="select">
+          <p id="text">
+            <i class="fa-solid fa-magnifying-glass"></i> Select Your State
+          </p>
+          <i class="fa-solid fa-chevron-down" id="down"></i>
+        </div>
+
+        <ul class="option_box" id="list" style="display: none;">
+          <li class="option" onclick="myFunction('Karnataka')"><p>Karnataka</p></li>
+          <li class="option" onclick="myFunction('Maharashtra')"><p>Maharashtra</p></li>
+          <li class="option" onclick="myFunction('Goa')"><p>Goa</p></li>
+        </ul>
+      </div>
+
+      <div class="search_box">
+        <input type="text" class="searchClass" id="searchId" placeholder="Search for Art, Crafts, or Artisans..." />
+        <p><i class="fa-solid fa-magnifying-glass"></i></p>
+      </div>
+
+      <div class="language">
+        <p id="eng">English<i class="fa-xl fa-solid fa-chevron-down" id="down"></i></p>
+        <ul class="hindi">
+          <li onclick="lang('ಕನ್ನಡ')">ಕನ್ನಡ</li>
+          <li onclick="lang('English')">English</li>
+        </ul>
+      </div>
+
+      <div class="your_logo">
+        <div class="girl_img" id="girl_img" style="margin-left: 10px">
+          <p id="login" class="myBtn"><b>Login</b></p>
+        </div>
+      </div>
+      <div class="selling">
+        <a href="./sell.html" style="text-decoration: none">
+          <button>
+            <i class="fa-solid fa-plus"></i>
+            <p>SELL ART</p>
+          </button>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div id="premenu">
+    <div id="all_categories">
+      <p>ALL CRAFTS <i id="down" class="fa-solid fa-chevron-down"></i></p>
+    </div>
+    <div>
+      <p id="car">Wooden Toys</p>
+      <p>Pottery</p>
+      <p>Hand-woven Silk</p>
+      <p>Home Decor</p>
+      <p>Artisan Services</p>
+      <p>Eco-Friendly</p>
+    </div>
+  </div>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content" id="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="login-name">Join Art Loom</h2>
+      <div id="main">
+        <div id="slide">
+          <img src="image/logo.jpg" alt="Art Loom" style="width: 100px;">
+        </div>
+        <div>
+          <form id="popup-login">
+            <div class="inp"><input type="text" placeholder="Continue with Phone"></div><br>
+            <div class="inp"><input type="text" placeholder="Continue with Email"></div><br>
+            <div id="lef">
+              <a id="login-btn-form" href="./login2.html">Login</a>
+              <p>OR</p>
+              <a href="/register/Registeration.html">Register Here</a>
+              <br>
+              <p>Support local heritage. Your details are safe.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="image-slidshow">
+    <div class="slideshow-container">
+      <div class="mySlides fade"><img class="slideimg" src="" style="width: 100%; height: 450px" /></div>
+      <div class="mySlides fade"><img class="slideimg" src="" style="width: 100%; height: 450px" /></div>
+      <div class="mySlides fade"><img class="slideimg" src="" style="width: 100%; height: 450px" /></div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  </div>
+
+  <div class="des-container">
+    <div class="left-container">
+      <div class="title-text">
+        <div class="first-div-text">
+          <div>Authentic Craft</div>
+          <div>
+            <img src="./image/icons8-verified-user-66.png" alt="Verified" height="25px" />
+            <p>Verified Artisan</p>
+          </div>
+        </div>
+        <div class="second-title-text">
+          <h1 id="brand">Artisan Product Name</h1>
+          <div class="small-des">
+            <div><p id="fuel">Material: Wood</p></div>
+            <div><p id="distance">Origin: Channapatna</p></div>
+            <div><p id="transm">Handmade: Yes</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="third-description">
+        <div class="head-desc">
+          <h1 style="color: #002f34; font-size: 26px; padding-left: 15px">Craft Description</h1>
+        </div>
+        <div class="desc-text">
+          <div><p id="obj-desc"></p></div>
+          <div class="rest-text">
+            <p id="obj-brand">Type: Home Decor</p>
+            <p id="obj-model">Artisan ID: Loom-99</p>
+            <p>Condition: Brand New</p>
+            <p>Sustainable Materials: Yes</p>
+            <p>Customization available: Yes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-container">
+      <div class="product-price">
+        <h1 id="price-text-right">₹ 00.00</h1>
+        <button id="buy">Chat with Artisan</button>
+      </div>
+
+      <div class="chat-box-container1">
+        <div class="chatbox-wrapper">
+          <div class="chatbox-message-wrapper">
+            <div class="chatbox-message-header">
+              <div class="chatbox-message-profile">
+                <img src="https://via.placeholder.com/40" alt="" class="chatbox-message-image" />
+                <div>
+                  <h4 class="chatbox-message-name" id="user-name-obj">Artisan Name</h4>
+                  <p class="chatbox-message-status">online</p>
+                </div>
+              </div>
+            </div>
+            <div class="chatbox-message-content">
+              <h4 class="chatbox-message-no-message">No messages yet. Start the conversation!</h4>
+            </div>
+            <div class="chatbox-message-bottom">
+              <form action="#" class="chatbox-message-form">
+                <textarea rows="1" placeholder="Inquire about this art..." class="chatbox-message-input"></textarea>
+                <button type="submit" class="chatbox-message-submit"><i class="bx bx-send"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="map">
+        <h3>Craft Origin</h3>
+        <p id="loc">Karnataka, India</p>
+        <img src="./image/map.png" alt="Map">
+      </div>
+    </div>
+  </div>
+
+  <div class="download_app">
+    <div class="download">
+      <img src="image/footer-bg.jpg" class="image" alt="Art Loom Footer" />
+      <div class="text" id="cap">
+        <h1>GET THE ART LOOM APP</h1>
+        <p>Support your local artisans directly from your mobile.</p>
+      </div>
+      <div class="download_store">
+        <p>GET THE APP TODAY</p>
+        <img src="image/play_store.png" alt="Play Store" />
+      </div>
+    </div>
+  </div>
+
+  <footer class="main_footer">
+    <div class="footer">
+      <div class="footer_box">
+        <h2>ARTISAN HUBS</h2>
+        <p>Mysuru</p><p>Channapatna</p><p>Bidar</p><p>Dharwad</p>
+      </div>
+      <div class="footer_box">
+        <h2>ABOUT ART LOOM</h2>
+        <p>Our Mission</p><p>Artisan Careers</p><p>Contact Us</p>
+      </div>
+      <div class="footer_box">
+        <h2>RESOURCES</h2>
+        <p>Help</p><p>Sitemap</p><p>Craft Blog</p>
+      </div>
+      <div>
+        <h2>FOLLOW US</h2>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <br />
+        <img style="width: 80px; margin-top: 10px;" src="image/play_store.png" alt="Play Store" />
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script/product.js"></script>
+  <script src="./script/chat.js"></script>
+</body>
+
+</html>66666
