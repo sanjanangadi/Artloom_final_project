@@ -1,5 +1,6 @@
-console.log("connected");
+console.log("Art Loom System Connected");
 const API = `https://mok-api-hola-ex.onrender.com`
+
 const inpCategory = document.getElementById("inp-car");
 const inpBrand = document.getElementById("inp-brand");
 const inpModel = document.getElementById("inp-model");
@@ -20,57 +21,28 @@ const mainsellDiv = document.getElementById("mainBox");
 
 btnpost.addEventListener("submit", (e) => {
   e.preventDefault();
-  console.log("clicked");
+  console.log("Post button clicked");
   const obj = createObj();
   postData(obj);
-  mainsellDiv.innerHTML = `<h2>Your AD has been posted</h2>`
+  
+  // Professional message for Artisans
+  mainsellDiv.innerHTML = `<h2 style="text-align:center; color:green; padding:50px;">Your Artwork has been posted successfully to Art Loom!</h2>`
+  
   setTimeout(() => {
     location.href = `category.html`
-  },2000)
+  }, 2000)
 });
 
 function createObj() {
   const obj = {
-    brand: inpBrand.value,
-    model: inpModel.value,
+    brand: inpBrand.value,      // This is now Artisan Name
+    model: inpModel.value,      // This is Product Type
     category: inpCategory.value,
-    year: inpYear.value,
+    year: inpYear.value,       // This is Quantity
     color: inpColor.value,
     price: inpPrice.value,
     condition: inpCondition.value,
-    transmission: "Manual",
-    fuel_type: inpFuel.value,
-    owner: "3rd",
-    engine: "1.2L",
-    status: "unsold",
-    kilometers_driven: inpKM.value,
-    strprice: "",
-    seller: {
-      name: inpName.value,
-      email: "asadayyubi@example.com",
-      phone: "+91-9876543210",
-      location: {
-        city: inpCity.value,
-        state: inpState.value,
-        country: "India",
-      },
-    },
-    description: `${inpBrand.value} ${inpModel.value} in fair condition. Has been driven for ${inpKM.value} km and has minor dents and scratches on the body. Comes with power windows, air conditioning, and a music system. Ideal for someone looking for a budget car.`,
-    images: [`${inpimg1.value}`, `${inpimg2.value}`, `${inpimg3.value}`],
-  };
-
-  console.log(obj);
-  return obj;
-}
-
-function postData(obj) {
-    fetch(`${API}/data`, {
-        method: "POST",
-        body: JSON.stringify(obj),
-        headers: {
-          "Content-type": "application/json",
-        },
-      })
-        .then((res) => res.json())
-        .then((data) => console.log(data));
-}
+    transmission: "Handmade",   // Changed from Manual
+    fuel_type: inpFuel.value,   // This is Material Type
+    owner: "Original",          // Changed from 3rd
+    engine: "Authent
