@@ -1,79 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Post Your Art | Art Loom</title>
-    <link rel="stylesheet" href="./style/sell.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-</head>
-<body>
-
-    <div id="whole">
-        <div class="back-nav" style="padding: 20px;">
-            <a href="index.html" style="text-decoration: none; color: #333;">
-                <i class="fa-solid fa-arrow-left"></i> Back to Home
-            </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art Loom - Post Your Art</title>
+    <link rel="stylesheet" href="./style/sell2.css" />
+  </head>
+  <body>
+    <div id="mainBox">
+      <h1>POST YOUR ARTWORK</h1>
+      <div id="inner">
+      <div id="box">
+        <div id="category">
+          <h2>SELECT CATEGORY</h2>
+          <p>Category (e.g. Handloom, Pottery, Tailoring)</p>
+          <input type="text" id="inp-car" placeholder="Enter Category"/>
         </div>
+        <div id="details">
+          <h3>INCLUDE ARTISAN DETAILS</h3>
+          <form id="btn-post">
+            <p>Artisan Name / Brand*</p>
+            <input type="text" id="inp-brand" placeholder="Your Name" />
+            <p>Product Type*</p>
+            <input type="text" id="inp-model" placeholder="e.g. Kasuti Saree" />
+            <p>Primary Color</p>
+            <input type="text" id="inp-color" />
+            <p>Condition (New/Custom)</p>
+            <input type="text" id="inp-condition" placeholder="e.g. Handmade to order"/>
+            <p>Crafting Time (Days)</p>
+            <input type="text" id="inp-km" placeholder="How many days to create?"/>
+            <p>Quantity Available*</p>
+            <input type="text" id="inp-year" />
+            <p>Material Used*</p>
+            <input type="text" id="inp-fuel" placeholder="e.g. Pure Silk, Clay, Cotton" />
+            
+            <div id="uploadImages">
+            <p>Upload Product Images</p>
+            <input type="text" placeholder="Select image 1" id="inp-img1">
+            <input type="text" placeholder="Select image 2" id="inp-img2">
+            <input type="text" placeholder="Select image 3" id="inp-img3">
+            <input type="text" placeholder="Select image 4">
+            </div>
 
-        <h1>POST YOUR AD / ನಿಮ್ಮ ಜಾಹೀರಾತನ್ನು ಪೋಸ್ಟ್ ಮಾಡಿ</h1>
-        
-        <div id="mainBox">
-            <h2>CHOOSE A CATEGORY</h2>
-
-            <ul>
-                <a href="./sell2.html" style="text-decoration: none; color: black;">
-                    <li id="sell2redirect" style="cursor: pointer">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3063/3063822.png" alt="Tailoring"/>
-                        Tailoring & Stitching (ಹೊಲಿಗೆ ಕೆಲಸ)
-                    </li>
-                </a>
-
-                <li>
-                    <img src="https://cdn-icons-png.flaticon.com/512/2903/2903513.png" alt="Mehendi"/>
-                    Mehendi Arts (ಮೆಹಂದಿ ಕಲೆ)
-                </li>
-
-                <li>
-                    <img src="https://cdn-icons-png.flaticon.com/512/2619/2619239.png" alt="Crafts"/>
-                    Handmade Crafts (ಹಸ್ತಶಿಲ್ಪಗಳು)
-                </li>
-
-                <li>
-                    <img src="https://cdn-icons-png.flaticon.com/512/7699/7699014.png" alt="Pottery"/>
-                    Pottery & Clay Work (ಮಣ್ಣಿನ ಪಾತ್ರೆ ಕೆಲಸ)
-                </li>
-
-                <li>
-                    <img src="https://cdn-icons-png.flaticon.com/512/2850/2850731.png" alt="Jewelry"/>
-                    Ethnic Jewelry (ಜವೆಲ್ಲರಿ)
-                </li>
-
-                <li>
-                    <img src="https://cdn-icons-png.flaticon.com/512/1260/1260271.png" alt="Decor"/>
-                    Home Decor & Paintings
-                </li>
-                
-                <li>
-                    <img src="https://cdn-icons-png.flaticon.com/512/3990/3990281.png" alt="Services"/>
-                    Other Artisan Services
-                </li>
-            </ul>
+            <h3>SET PRICE*</h3>
+            <p>Price (per item)</p>
+            <input type="text" placeholder="₹ |" id="inp-price"/>
+          
+            <div id="UserDetails">
+              <h3>REVIEW YOUR DETAILS</h3>
+              <p>Artisan Name*</p>
+              <input type="text" id="inp-name"/>
+              <p>City*</p>
+              <input type="text" id="inp-city" />
+              <p>State*</p>
+              <input type="text" id="inp-state" value="Karnataka"/>
+            </div>
+            <br />
+            <button type="submit">POST NOW</button>
+          </form>
         </div>
+      </div>
     </div>
-
+  </div>
     <footer>
-        <div id="foot">
-            <div>
-                <h4>Art Loom India</h4>
-                <p>Supporting local artisans across Karnataka & beyond.</p>
-            </div>
-            <div>
-                <h4>© 2024-2026 ART LOOM</h4>
-                <p>Empowering Heritage, One Loom at a Time.</p>
-            </div>
+      <div id="foot">
+        <div>
+          <h4>Art Loom Communities</h4>
+          <p>Supporting Local Artisans Across Karnataka</p>
         </div>
+        <div>
+          <h4>Digital Marketplace for Artisans ©</h4>
+          <p>2026 ART LOOM PROJECT</p>
+        </div>
+      </div>
     </footer>
-</body>
+    <script src="./script/sell2.js"></script>
+  </body>
 </html>
+    
+    
