@@ -5,66 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login | The Art Loom</title>
-    <link rel="stylesheet" href="./style/login1.css">
-    <style>
-        /* Keeping your specific back-arrow style */
-        #innerbox img {
-            width: 40px;
-            align-self: flex-start;
-            cursor: pointer;
-        }
-        
-        /* Centering the main box since it's a standalone page */
-        body {
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="./style/login.css">
 </head>
 <body>
-    
-    <div id="main">
-        <div id="innerbox"> 
-            <a href="index.html">
-                <img src="https://png.pngtree.com/png-vector/20190412/ourlarge/pngtree-vector-back-icon-png-image_931209.jpg" alt="Back">
-            </a>
-        </div>
-
-        <div id="slide">
-           <img src="artloom-logo.png. (2).png" alt="Art Loom Logo" style="width: 200px;">
-            <h3 style="text-align: center; color: #002f34;">Welcome to Art Loom</h3>
-        </div>
-
-        <div>
-            <form action="">
-                
-                <div class="inp"> 
-                    <input type="text" placeholder="Continue with Phone">
-                </div>
-                <br>
-                <div class="inp"> 
-                    <input type="text" placeholder="Continue with Email">
-                </div>  
-                <br>
-                <div id="lef">
-                    <a href="./login2.html" id="login-btn-form">Login</a>
-                    
-                    <p>OR</p>
-                    <p>New to the community?</p>
-                    <a href="./register/Registeration.html" style="text-decoration: underline;">Register Here</a>
-                    
-                    <br>
-                    <p style="font-size: 12px; color: #666;">Your support for local artisans is valued.</p>
-                    <p style="font-size: 11px; color: #999;">By continuing, you agree to Art Loom's Terms and Privacy Policy.</p>
-                </div>
-            </form>
-        </div>
+    <div id="nav">
+        <a href="index.html">
+            <img src="https://cdn-icons-png.flaticon.com/512/271/271220.png" alt="back" style="width: 20px;">
+        </a>
     </div>
 
+    <div id="slide">
+        <img src="artloom-logo.png" alt="Art Loom Logo" style="width: 200px;">
+        <h3 style="text-align: center; color: #002f34;">Welcome to Art Loom</h3>
+    </div>
+
+    <div id="login-container">
+        <form action="">
+            <div class="inp">
+                <p>Email Address</p>
+                <input type="text" id="email" placeholder="Enter your Email">
+            </div>
+            <br>
+            <div class="inp">
+                <p>Password</p>
+                <input type="password" id="password" placeholder="Enter your Password">
+            </div>
+            <br>
+            <div id="lef">
+                <button type="submit" id="login-btn-form" style="width: 100%; padding: 10px; background-color: #002f34; color: white; border: none; cursor: pointer; border-radius: 5px;">Login</button>
+                
+                <p style="text-align: center; margin-top: 15px;">OR</p>
+                <p style="text-align: center;">New to the community?</p>
+                <a href="./register/Registeration.html" style="text-decoration: underline; display: block; text-align: center;">Register Here</a>
+                
+                <br>
+                <p style="font-size: 12px; color: #666; text-align: center;">Your support for local artisans is valued.</p>
+                <p style="font-size: 11px; color: #999; text-align: center;">By continuing, you agree to Art Loom's Terms.</p>
+            </div>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
 </body>
 </html>
