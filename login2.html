@@ -1,62 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Email Login | The Art Loom</title>
-    <link rel="stylesheet" href="./style/login2.css" />
-    <style>
-      /* Keeping your hover logic but using Art Loom colors */
-      button:hover {
-        background-color: #002f34;
-        color: white;
-        font-weight: bolder;
-        cursor: pointer;
-      }
-      
-      body {
-        background-color: #f4f4f4;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        margin: 0;
-        font-family: Arial, sans-serif;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="main">
-      <div id="logo">
-        <img src="artloom-logo.png. (2).png" alt="Art Loom Logo" style="width: 200px;">
-      </div>
-      
-      <h3 style="color: #002f34;"><span>Login to your Account</span></h3>
-      
-      <div id="input">
-        <input type="email" autocomplete="email" id="email" placeholder="Email Address" />
-      </div>
-      <br>
-      <div id="input-pass">
-        <input type="password" id="password" placeholder="Password">
-      </div>
-
-      <p id="p1" style="font-size: 13px; color: #555; padding: 0 20px;">
-        <span>New to Art Loom? Please return to the previous page to register.</span>
-      </p>
-
-      <div>
-        <button id="login-btn-form" type="submit" style="width: 80%; padding: 10px; border-radius: 4px; border: 1px solid #002f34;">
-            <span>Login</span>
-        </button>
-      </div>
-
-      <p id="p2" style="font-size: 11px; color: #999; padding: 20px;">
-        <span>We value your privacy. Your email is used only for account security and artisan updates.</span>
-      </p>
+<head>
+    <meta charset="UTF-8">
+    <title>Login | Art Loom</title>
+    <link rel="stylesheet" href="login2.css">
+</head>
+<body>
+    <div id="slide">
+        <img src="artloom-logo.png" alt="Art Loom Logo" style="width: 200px;">
+        <h3 style="color: #002f34; text-align: center;">Login to your Account</h3>
     </div>
-  </body>
 
-  <script src="./script/login2.js"></script>
+    <div id="input-container" style="text-align: center; margin-top: 20px;">
+        <div class="inp">
+            <input type="email" id="email" placeholder="Email Address" style="width: 80%; padding: 10px; margin-bottom: 10px;">
+        </div>
+        <div class="inp">
+            <input type="password" id="password" placeholder="Password" style="width: 80%; padding: 10px; margin-bottom: 20px;">
+        </div>
+
+        <button id="login-btn-form" type="submit" style="width: 80%; padding: 10px; background-color: #002f34; color: white; border: none; cursor: pointer; border-radius: 4px;">
+            Login
+        </button>
+
+        <p style="font-size: 13px; color: #555; margin-top: 20px;">
+            New to Art Loom? <a href="Registeration.html">Register Here</a>
+        </p>
+    </div>
+
+    <script src="login2.js"></script>
+</body>
 </html>
